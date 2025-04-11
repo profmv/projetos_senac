@@ -8,12 +8,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <!-- Aqui é um cabeçalho -->
     </header>
+
+    <main>
+        <div class="campos-container">
+            <label>Valor inicial: </label><input id="in-val-inic" type="number">
+            <label>Investimento Mensal: </label><input id="in-inv-mensal" type="number">
+            <label>Juros % (a.a): </label><input id="in-juros" type="number">
+        </div>
+        <div class="campos-container">
+            <label>Qtd. Meses: </label><input id="in-qtd-meses" type="number">
+            <label>Ano Inicial: </label><input id="in-ano-inic" type="number">
+            <label>Mês Inicial: </label>
+            <select id="sel-mes-inic">
+                <option id="op-janeiro">Janeiro</option>
+                <option id="op-fevereiro">Fevereiro</option>
+            </select>
+        </div>
+    </main>
     
 </body>
 </html>

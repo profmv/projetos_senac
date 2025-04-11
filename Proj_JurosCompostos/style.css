@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(15,15,15);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.campos-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+input, select {
+    margin-bottom: 10px;
+    width: 40%;
+    height: 30px;
+    border-radius: 5px;
+}
