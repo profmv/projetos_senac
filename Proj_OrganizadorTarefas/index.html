@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Tarefas - Kanban</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Painel Divisor -->
+    <header id="painel-divisor">
+        <h1>Organizador de Tarefas</h1>
+        <form id="formulario-tarefa">
+            <input type="text" id="descricao-curta" placeholder="Descrição curta" required>
+            <input type="date" id="data-inicio" required>
+            <input type="date" id="prazo" required>
+            <select id="prioridade">
+                <option value="baixa">Baixa</option>
+                <option value="media">Média</option>
+                <option value="alta">Alta</option>
+            </select>
+            <input type="text" id="autor" placeholder="Autor" required>
+            <textarea id="descricao-detalhada" placeholder="Descrição detalhada"></textarea>
+            <button type="submit" id="adicionar-tarefa">Adicionar Tarefa</button>
+        </form>
+    </header>
+
+    <!-- Quadro Kanban -->
+    <main id="quadro-kanban">
+        <section id="a-fazer" class="coluna">
+            <h2>A Fazer</h2>
+            <div class="tarefas"></div>
+        </section>
+        <section id="em-andamento" class="coluna">
+            <h2>Em Andamento</h2>
+            <div class="tarefas"></div>
+        </section>
+        <section id="concluido" class="coluna">
+            <h2>Concluído</h2>
+            <div class="tarefas"></div>
+        </section>
+    </main>
+
+    <!-- Botão para gerar relatório CSV -->
+    <footer>
+        <button id="gerar-relatorio">Gerar Relatório CSV</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- 
+Por favor, crie um projeto em HTML, de um Organizador de Tarefas em formato Kanban, que deve seguir as seguntes especificações:
+1. Os blocos de código, HTML e CSS devem ser estritamente organizados de acordo com a função específica que eles representam no programa, e assim, devidametne comentados.
+2. O quadro Kanban será na vertical, dividido em três estágios: A fazer, Em Andamento, Concluído.
+3. Todos nomes de funções, variáveis e termos não reservados (que não são comandos, obviamente) devem estar em português.
+4. Acima uma painel divisor deve conter um conjunto de campos para registrar a tarefa, entre eles: Descrição curta da tarefa, data de início, prazo, prioridade, descrição detalhada, autor.
+5. Dentro do cartão deve haver um botão que permitirá passar para etapa seguinte ou anterior.
+6. O cartão não precisa mostrar todos detalhes, só a descrição curta, prazo e autor.
+7. Ao clicar no cartão da tarefa, uma janela maior aparecerá em forma de overlay, com todos dados detalhados da tarefa.
+8. Use um design moderno, bonito, em tema dark com luzes neon (futurista), cantos arrendodados.
+9. Faça uso de Grids e Flexbox.
+10. Deve possuir um botão para gerar relatório em arquivo CSV, que emitirá quais tarefas existem e todos seus dados.
+11. O código deve ser o mais fácil de compreender por humanos possível, evitando uso de artifícios complexos como funções de seta, lógicas obtusas, e otimizações que fiquem difíceis de entender a olho nu.
+12. Gere o HTML, CSS, e JavaScript em arquivos separados.
+13. Quando o quadro Kanban for movido, deve ocorrer uma animação sutil de movimento, deslizando de uma etapa para outra.
+-->
