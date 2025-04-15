@@ -22,30 +22,10 @@ function criarTarefa() {
             <button class="mover-proximo">→</button>
         </div>
     `;
-    tarefa.addEventListener("click", mostrarDetalhes);
+    tarefa.addEventListener("click",  );
     return tarefa;
 }
 
-// Função para mostrar detalhes da tarefa em overlay
-function mostrarDetalhes(evento) {
-    if (evento.target.tagName === "BUTTON") return; // Ignorar cliques nos botões de mover
-
-    const overlay = document.createElement("div");
-    overlay.className = "overlay";
-    overlay.innerHTML = `
-        <div class="detalhes-tarefa">
-            <h3>Detalhes da Tarefa</h3>
-            <p>Descrição: ${evento.target.querySelector("p:nth-child(1)").innerText}</p>
-            <button onclick="fecharOverlay()">Fechar</button>
-        </div>
-    `;
-    document.body.appendChild(overlay);
-}
-
-// Função para fechar o overlay de detalhes
-function fecharOverlay() {
-    document.querySelector(".overlay").remove();
-}
 
 // Adicionar funcionalidade para mover tarefas entre as etapas
 document.addEventListener("click", function(evento) {
