@@ -35,7 +35,7 @@ function gerarTabela() {
         textHTML += "<td>" + valorAtual + "</td>";
 
         textHTML += "</tr>";
-
+        
     }
 
     textHTML += "</table>";
